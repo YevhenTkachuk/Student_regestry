@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 6(Task 1)</title>
+  <link rel="stylesheet" href="./styles/task2.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header_registry"></div>
+    <p class="header_paragraph">Реестр студентов</p>
+  </header>
+  <main>
+    <nav>
+      <p><input type="button" value="Создать студента" onclick="myApp.createHuman();"></p>
+      <p><input type="button" value="Сортировка по возрастанию" onclick="myApp.sortArray();"></p>
+      <p><input type="button" value="Сортировка по убыванию" onclick="myApp.sortNegativeArray();"></p>
+      <p class="number"><label for="debt">Студенту номер<input type="text" name="debt" id="debt"></label></label></p>
+      <p><input type="button" value="Добавить задолженость" onclick="myApp.addDebt();"></p>
+      <p><input type="button" value="Удалить задолженость" onclick="Human.delDebt();"></p>
+    </nav>
+    <section>
+      <textarea id="humans" disabled></textarea>
+    </section>
+  </main>
+  
+  
+  <script src="./scripts/task2.js"></script>
+</body>
+</html>
